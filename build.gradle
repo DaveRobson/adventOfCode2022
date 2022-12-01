@@ -1,0 +1,10 @@
+plugins {
+    id 'java'
+}
+
+group 'uk.co.robson.adventofcode2022'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
