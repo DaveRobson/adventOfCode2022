@@ -1,3 +1,4 @@
 rootProject.name = 'adventOfCode2022'
 include 'modules:day1'
 include 'modules:common'
+include 'modules:day2'
