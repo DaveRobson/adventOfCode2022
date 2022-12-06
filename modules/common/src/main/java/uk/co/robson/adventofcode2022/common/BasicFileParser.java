@@ -24,7 +24,7 @@ public class BasicFileParser {
                 .collect(Collectors.toList());
     }
 
-    private String loadInputData(String name) throws Exception {
+    public String loadInputData(String name) throws Exception {
         InputStream stream = BasicFileParser.class.getClassLoader().getResourceAsStream(name);
         return IOUtils.toString(stream, StandardCharsets.UTF_8);
     }
