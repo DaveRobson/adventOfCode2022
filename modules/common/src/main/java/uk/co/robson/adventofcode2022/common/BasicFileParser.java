@@ -29,4 +29,20 @@ public class BasicFileParser {
         return IOUtils.toString(stream, StandardCharsets.UTF_8);
     }
 
+    public int[][] parseFile2D(String name, int matrix) throws Exception {
+
+        String[] rawLines = loadInputData(name).split("\n");
+        int[][] array2d = new int[matrix][matrix];
+
+        for(int i = 0; i < rawLines.length; i++) {
+            String[] letters = rawLines[i].split("");
+
+            for(int j = 0; j < letters.length; j++) {
+                array2d[i][j] = Integer.parseInt(letters[j]);
+            }
+        }
+
+        return array2d;
+    }
+
 }

@@ -7,3 +7,6 @@ include 'modules:day4'
 include 'modules:day5'
 include 'modules:day6'
 include 'modules:day7'
+include 'modules:day8'
+findProject(':modules:day8')?.name = 'day8'
+
